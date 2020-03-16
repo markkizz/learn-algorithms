@@ -1,40 +1,8 @@
-function digPow(n, p) {
-  // start with p
-  //split n and pow /n = k
-  let k;
-  let sum = 0;
-  let numArr = [...(n + "")];
-  numArr.forEach((num, i) => (sum += num ** (p + i)));
-  k = Math.floor(sum / n);
-  console.log(k);
-  console.log(k * n === sum);
-}
-
-digPow(695, 2);
-
-// (function tribonacci(signature, n) {
-//   //your code here
-//   // an = a-1 + a-2 + a-3
-//   let ans = []
-//   for(let i=0; i<n; i++ ) ans.push(i<3 ? signature[i] : ans[i-1]+ans[i-2]+ans[i-3])
-
-//   console.log(ans)
-// })([0,1,1],10)
 
 
-// (() => {
-//   let bi = "10011"
-//   let arrbi = [...bi].reduce((a,c,i,arr) => a + parseInt(c)*Math.pow(2, arr.length-1-i), 0)
-//   // let arrbi = [...bi]
-//   // let ans = 0
-//   // for(let i=0; i<arrbi.length; i++) {
-//   //   ans += parseInt(arrbi[i])*(2**((arrbi.length-1)-i))
-//   //   console.log(arrbi[i]*2**(i))
-//   //   console.log(ans)
-//   // }
 
-//   console.log(arrbi)
-// })()
+
+
 
 // ((n) => {
 //   let bi = '';
