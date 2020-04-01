@@ -5,24 +5,6 @@
   console.log(ans);
 })("benefit")
 
-const leetCode = (((nums) => {
-  let max = Math.max(...nums)
-  console.log(nums.length)
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1, sum; j < nums.length; j++) {
-      if (j === i + 1){
-        sum = nums[i] + nums[j];
-        if (sum > max) max = sum;
-        continue;
-      }
-      sum = sum + nums[j];
-      if (sum > max) max = sum;
-      console.log(sum)
-    }
-    console.log('max>'+i, max);
-  }
-}))([2,1]);
-
 
 let arr = [1, 100, 50, -51, 1, 1];
 // let reverseArr = arr.map(e => e).reverse();
@@ -58,5 +40,3 @@ console.log(subtotalOfCart(myCart));
 
 const data = [{ a: "a", b: [{ c: [{ d: "want " }, { f: "f" }], e: "e" }] }];
 let dataB = data.b.map(e => e)
-function name(params) {
-}
