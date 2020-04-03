@@ -2,7 +2,7 @@
    * @param email: example@nipa.com
    * @returns e*****e@n***.com
    */
-  export function maskingEmail(email) {
+  function maskingEmail(email) {
     const regex = new RegExp(/(.)(.*?)(.@.)(.*?)(\.[^\.]+)$/g)
     const match = regex.exec(email)
     const firstChar = match[1]
