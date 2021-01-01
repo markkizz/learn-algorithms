@@ -29,3 +29,5 @@ function isIsogram(str: string) {
   console.log(obj)
   return ans
 }
+
+console.log("isIsogram", isIsogram("Dermatoglyphics"))
